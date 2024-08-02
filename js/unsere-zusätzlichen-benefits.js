@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         row.style.display = "flex";
         setTimeout(() => {
           row.style.opacity = 1;
-        }, 50); // Slight delay to trigger CSS transition
+        }, 2000); // Slight delay to trigger CSS transition
       }, delay);
     }
   
@@ -16,3 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
       displayBenefitRow(row, index * 2000); // 2 second delay between each row
     });
   });
+
+  const docExplain = document.getElementById('doc-explain');
+  document.addEventListener('DOMContentLoaded', () => {setTimeout(() => {docExplain.style.opacity = 1;}, 1000)})
+
+  const miteinander = document.getElementById('miteinander');
+  document.addEventListener('DOMContentLoaded', () => {setTimeout(() => {miteinander.style.top = 220 +'px';}, 1500)})
+  document.addEventListener('DOMContentLoaded', () => {setTimeout(() => {miteinander.style.opacity = 1;}, 1500)})

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/unsere-zertifizierungen.css" />
+    <link rel="stylesheet" href="/css/x-unsere-zertifizierungen.css" />
     <title>Unsere Zertifizierungen</title>
   </head>
   <body>
@@ -54,7 +54,12 @@
                 >Unsere Zertifizierungen →</a
               >
             </li>
-            <li><a>DS-AT als Arbeitgeber →</a></li>
+            <li>
+              <a
+                href="/willkommen-auf-http-ds-at-reichwein-de-2/ds-at-als-arbeitgeber.html"
+                >DS-AT als Arbeitgeber →</a
+              >
+            </li>
             <li>
               <a
                 style="margin-left: 40px"
@@ -65,9 +70,30 @@
             <li>
               <a
                 href="/willkommen-auf-http-ds-at-reichwein-de-2/OEMs-und-Partner.html"
-                style="margin-left: 160px"
+                style="margin-left: 150px"
                 >OEMs und Partner →</a
               >
+            </ul>
+            <ul>
+            </li>
+            <span id="line-between"></span>
+            <div id="mobile-container">
+              <li class="mobile mobile-1">
+                <a href="/index.html">HOME</a>
+              </li>
+              <li class="mobile">
+                <a href="/willkommen-auf-http-ds-at-reichwein-de-2/kontakt.html">KONTAKT</a>
+              </li>
+              <li class="mobile mobile-2">
+                <a href="/willkommen-auf-http-ds-at-reichwein-de-2/karriere.html">KARRIERE</a>
+              </li>
+            </div>
+            <li id="mobile-sidebar-li-img">
+              <img
+                class="mobile-sidebar-img"
+                src="/BilderWebseite/Reichwein50.png"
+                alt="Logo von DS-AT-Reichwein"
+              />
             </li>
           </ul>
         </div>
@@ -75,43 +101,49 @@
         <img class="logo" src="/BilderWebseite/Reichwein50.png" />
 
         <nav class="navbar">
-          <a href="/index.html">HOME</a>
-          <a href="#">KONTAKT</a>
-          <a href="#">KARRIERE</a>
+          <a class="show-only-on-pc" href="/index.html">HOME</a>
+          <a class="show-only-on-pc" href="/willkommen-auf-http-ds-at-reichwein-de-2/kontakt.html">KONTAKT</a>
+          <a class="show-only-on-pc" href="/willkommen-auf-http-ds-at-reichwein-de-2/karriere.html">KARRIERE</a>
         </nav>
       </div>
     </header>
-    <div id="tisax-IHK">
-      <img
-        height="400px;"
-        src="/BilderWebseite/Bilder Zertifizierungen/TisaxISO-removebg-preview(1).png"
-        alt="TisaxISO"
-      />
-      <img
-        src="/BilderWebseite/Bilder Zertifizierungen/ihk_lo_ausbild_rz_cmyk_b70-removebg-preview(1).png"
-        alt="IHK"
-      />
-      <h1 class="VW-S-rating">VW-konzernspezifisches S-Rating</h1>
-    </div>
+    <main>
+      <div id="doc-explain">Unsere Zertifizierungen</div>
+      <div id="tisax-IHK">
+        <div id="tisax">
+          <img
+            src="/BilderWebseite/Bilder Zertifizierungen/TisaxISO-removebg-preview(1).png"
+            alt="TisaxISO"
+          />
+        </div>
+        <div id="IHK">
+          <img
+            src="/BilderWebseite/Bilder Zertifizierungen/ihk_lo_ausbild_rz_cmyk_b70-removebg-preview(1).png"
+            alt="IHK"
+          />
+        </div>
+        <h1
+          class="VW-S-rating"
+          id="rating"
+          style="opacity: 0; transition: opacity 0.3s ease"
+        >
+          VW-konzernspezifisches S-Rating
+        </h1>
+      </div>
+    </main>
     <footer>
       <div id="footer-container">
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >DS-AT Reichwein GmbH & Co. KG</span
-          >
-          <span style="border-bottom: white 1px solid">Schäferstraße 5</span>
-          <span>99837 Werra-Suhl-Tal</span>
+          <div class="border">DS-AT Reichwein GmbH & Co. KG</div>
+          <div class="border">Schäferstraße 5</div>
+          <div class="border">99837 Werra-Suhl-Tal</div>
         </div>
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >Telefon: 036922 4374-0</span
-          >
-          <span>Telefax: 036922 4374-18</span>
+          <div class="border">Telefon: 036922 4374-0</div>
+          <div class="border">Telefax: 036922 4374-18</div>
         </div>
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >Email: info@ds-at-reichwein.de</span
-          >
+          <div class="border">Email: info@ds-at-reichwein.de</div>
         </div>
       </div>
       <div id="footer-rechte-box">
@@ -130,12 +162,11 @@
         >
         <br />
         <span id="small-footer-rechte-box"
-          ><span class="data-impres">DATENSCHUTZ</span>
-          <span class="data-impres-between">|</span>
-          <span class="data-impres">IMPRESSUM</span></span
-        >
+          ><a href="/willkommen-auf-http-ds-at-reichwein-de-2/recht-sichere-pflicht-angaben.html" class="data-impres">DATENSCHUTZ & IMPRESSUM</a>
+        
       </div>
     </footer>
+
     <script src="/js/sidebar.js"></script>
     <script src="/js/unsere-zertifizierungen.js"></script>
   </body>

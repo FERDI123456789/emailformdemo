@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/kontakt.css">
+    <title>Kontakt</title>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-col">
+            <a href="../index.html"><img class="logo" src="/BilderWebseite/Reichwein50.png"/></a>
+        </div>
+        <div class="right-col">
+            <a href="../index.html"><img class="logo-right-col" src="/BilderWebseite/Reichwein50.png"/></a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <div class="description">Dark Mode</div>
+            </div>
+
+            <h1>Kontaktiere Uns</h1>
+            <p>Oder gib uns Feedback!</p>
+            <div id="error"><span id="error-text"></span></div>
+            <div id="loading-animation" class="hidden">
+              <div class="spinner"></div>
+              <p>Wird gesendet...</p>
+          </div>
+            <span id="success-msg"></span>
+
+            <form id="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Dein Voller Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Deine Email Adresse" required>
+
+                <label for="tele">Telefon (optional)</label>
+                <input type="tel" id="tele" name="tele" placeholder="Deine Telefon Nummer (optional)" >
+
+                <label for="message">Message</label>
+                <textarea rows="6" placeholder="Deine Nachricht" id="message" name="message" required></textarea>
+
+                <button type="submit" id="submit" name="submit">Send</button>
+                <div class="button-container">
+                    <span onclick="goBack()" class="back">Zurück</span>
+                </div>
+            </form>
+            <footer>
+                <div id="footer-rechte-box">
+                    <span
+                      >© <span id="date"></span>
+                      <script>
+                        const dateYear = document.getElementById("date");
+                        const nowDateYear = new Date();
+                        const year = nowDateYear.getFullYear();
+                        dateYear.innerText = `${year}`;
+                      </script>
+                      <span id="footer-rechte-box-hover"
+                        >DS-AT Reichwein - Dienstleistungen für die Automobilbranche
+                      </span>
+                      - Alle Rechte vorbehalten</span
+                    >
+                    <br />
+                    <span id="small-footer-rechte-box"
+                      ><a
+                        id="datenschutz-impressum-link"
+                        href="/willkommen-auf-http-ds-at-reichwein-de-2/recht-sichere-pflicht-angaben.html"
+                        class="data-impres"
+                        >DATENSCHUTZ & IMPRESSUM</a
+                      >
+                    </span>
+                  </div>
+                </footer>
+        </div>
+        
+    </div>
+</body>
+</html>

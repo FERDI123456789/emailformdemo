@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DS AT Reichwein GmbH & Co. KG</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <title>Unsere Zertifizierungen</title>
   </head>
   <body>
     <header class="header">
       <div class="nav">
-        <img src="/BilderWebseite/Reichwein50.png" />
+        <img class="logo" src="/BilderWebseite/Reichwein50.png" />
 
         <nav class="navbar">
-          <a href="/index.html">HOME</a>
-          <a href="#">KONTAKT</a>
-          <a href="#">KARRIERE</a>
+          <a class="navbar-text" href="/index.html">HOME</a>
+          <a class="navbar-text" href="/willkommen-auf-http-ds-at-reichwein-de-2/kontakt.html">KONTAKT</a>
+          <a class="navbar-text" href="/willkommen-auf-http-ds-at-reichwein-de-2/karriere.html">KARRIERE</a>
         </nav>
       </div>
       <img src="/BilderWebseite/Flaggen_1170x500(1).jpg" id="flaggen" />
       <!-- Up button ? -->
-      <div></div>
+
       <div class="main-text">
         <h1>Development Services & Automotive Testing</h1>
         <h3 class="main-text-h3">
@@ -71,42 +71,60 @@
             src="/BilderWebseite/Fahnet-516x1024.png"
             alt=""
             width="350px;"
-            class="ds-at-horizontal"
+            class="ds-at-horizontal hide"
           />
         </div>
-        <div id="main-container-2"></div>
-        <div id="standort" style="margin-left: 250px; margin-bottom: 80px">
-          <h2>Hier finden Sie uns</h2>
+        <div class="hide" id="main-container-2"></div>
+        <div class="hide" id="standort">
+          <h2 class="hide">Hier finden Sie uns</h2>
           <a
             href="https://www.google.de/maps/place/DS-AT+Reichwein+GmbH+%26+Co.+KG/@50.9465244,10.0780057,17z/data=!3m1!4b1!4m6!3m5!1s0x47a4a197bf8d3707:0x14224edee46899fb!8m2!3d50.946521!4d10.0805806!16s%2Fg%2F11svp9htm1?entry=ttu"
             ><img
+              class="hide"
               style="cursor: pointer"
               id="standort-hintergrund"
               src="/BilderWebseite/KarteV1-removebg-preview.png"
               alt="ein bild von unserem standort"
           /></a>
+          <a href="https://www.google.de/maps/place/DS-AT+Reichwein+GmbH+%26+Co.+KG/@50.9465244,10.0780057,17z/data=!3m1!4b1!4m6!3m5!1s0x47a4a197bf8d3707:0x14224edee46899fb!8m2!3d50.946521!4d10.0805806!16s%2Fg%2F11svp9htm1?entry=ttu" style="text-decoration: none;"><h2 class="hide link-hover" style="border-bottom: rgb(255, 255, 255) 3px solid; cursor: pointer;"><span class="link-arrow">Maps... </span></h2></a>
+        </div>
+        <div id="standort-horizontal-row">
+          <div>
+            <img
+              src="/BilderWebseite/Fahnet-516x1024.png"
+              alt=""
+              width="350px;"
+              class="ds-at-horizontal"
+            />
+          </div>
+          <div id="main-container-2"></div>
+          <div id="standort">
+            <h2>Hier finden Sie uns</h2>
+            <a
+              href="https://www.google.de/maps/place/DS-AT+Reichwein+GmbH+%26+Co.+KG/@50.9465244,10.0780057,17z/data=!3m1!4b1!4m6!3m5!1s0x47a4a197bf8d3707:0x14224edee46899fb!8m2!3d50.946521!4d10.0805806!16s%2Fg%2F11svp9htm1?entry=ttu"
+              ><img
+                style="cursor: pointer"
+                id="standort-hintergrund"
+                src="/BilderWebseite/KarteV1-removebg-preview.png"
+                alt="ein bild von unserem standort"
+            /></a>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <div id="footer-container">
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >DS-AT Reichwein GmbH & Co. KG</span
-          >
-          <span style="border-bottom: white 1px solid">Schäferstraße 5</span>
-          <span>99837 Werra-Suhl-Tal</span>
+          <span class="border">DS-AT Reichwein GmbH & Co. KG</span>
+          <span class="border">Schäferstraße 5</span>
+          <span class="border werra">99837 Werra-Suhl-Tal</span>
         </div>
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >Telefon: 036922 4374-0</span
-          >
-          <span>Telefax: 036922 4374-18</span>
+          <span class="border tele-1">Telefon: 036922 4374-0</span>
+          <span class="border tele-2">Telefax: 036922 4374-18</span>
         </div>
         <div class="footer-info-box">
-          <span style="border-bottom: white 1px solid"
-            >Email: info@ds-at-reichwein.de</span
-          >
+          <span class="border">Email: info@ds-at-reichwein.de</span>
         </div>
       </div>
       <div id="footer-rechte-box">
@@ -118,18 +136,23 @@
             const year = nowDateYear.getFullYear();
             dateYear.innerText = `${year}`;
           </script>
-          <a href="index.html" id="footer-rechte-box-hover"
+          <span id="footer-rechte-box-hover"
             >DS-AT Reichwein - Dienstleistungen für die Automobilbranche
-          </a>
+          </span>
           - Alle Rechte vorbehalten</span
         >
         <br />
         <span id="small-footer-rechte-box"
-          ><a class="data-impres">DATENSCHUTZ</a>
-          <a class="data-impres-between">|</a>
-          <a class="data-impres">IMPRESSUM</a></span
-        >
+          ><a
+            id="datenschutz-impressum-link"
+            href="/willkommen-auf-http-ds-at-reichwein-de-2/recht-sichere-pflicht-angaben.html"
+            class="data-impres"
+            >DATENSCHUTZ & IMPRESSUM</a
+          >
+        </span>
       </div>
     </footer>
+    <script src="/js/logic.js"></script>
+    <script src="/js/daten-impres-haupt.js"></script>
   </body>
 </html>
