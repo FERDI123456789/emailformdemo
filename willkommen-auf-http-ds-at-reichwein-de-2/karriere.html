@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/karriere.css">
+    <title>Karriere</title>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-col">
+            <a href="../index.html"><img class="logo" src="/BilderWebseite/Reichwein50.png"/></a>
+        </div>
+        <div class="right-col">
+            <a href="../index.html"><img class="logo-right-col" src="/BilderWebseite/Reichwein50.png"/></a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <div class="description">Dark Mode</div>
+            </div>
+
+            <h1>Karriere</h1>
+            <p>Für ein gutes miteinander</p>
+
+            <form id="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Dein Voller Name" required>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Deine Email Adresse" required>
+
+              <label for="tele">Telefon</label>
+              <input type="tel" id="tele" name="tele" placeholder="Deine Telefon Nummer" required>
+
+              <label for="street">Straße, Haus-Nr.</label>
+              <input type="text" id="street" name="street" placeholder="Deine Straße, Haus-Nr" required>
+
+              <label for="postal-code">PLZ, Ort</label>
+              <input type="text" id="postal-code" name="postal-code" placeholder="PLZ, Ort" required>
+
+              <label for="interests">Interessen</label>
+              <input type="text" id="interests" name="interests" placeholder="Interessen" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Deine Nachricht" id="message" name="message" required></textarea>
+
+              <div id="option-container">
+              <div class="field">
+                  <label for="license" class="field__label">Welchen Führerscheinklasse haben sie?</label>
+                  <select id="license" class="field__dropdown" name="license" required>
+                    <option value="Keinen">Keinen</option>
+                    <option value="B">B</option>
+                    <option value="BE">BE</option>
+                    <option value="C1">C1</option>
+                    <option value="C1E">C1E</option>
+                    <option value="C">C</option>
+                    <option value="CE">CE</option>
+                  </select>
+              </div>
+
+              <div class="field" style="margin-top: 40px;">
+                  <label for="job" class="field__label">Für was bewerben Sie sich?</label>
+                  <select id="job" class="field__dropdown" name="job" required>
+                      <option value="ich-weiß-nicht">Ich weiß nicht</option>
+                    <option value="test-fahrer">Test Fahrer</option>
+                    <option value="manager">Kraftfahrer</option>
+                    <option value="techniker ">KFZ-Mechatroniker</option>
+                    <option value="lagerist">Sachbearbeiter</option>
+                    <option value="büro">Projektleiter</option>
+                    <option value="büro">Werkstudent/Praktikant</option>
+                  </select>
+              </div>
+          </div>
+          <div id="error"><span id="error-text"></span></div>
+          <div id="loading-animation" class="hidden">
+              <div class="spinner"></div>
+              <p>Wird gesendet...</p>
+          </div>
+          <span id="success-msg"></span>
+          <button type="submit" id="submit" name="submit">Send</button>
+              <div class="button-container">
+                  <span onclick="goBack()" class="back">Zurück</span>
+              </div>
+            </form>
+            <footer>
+                <div id="footer-rechte-box">
+                    <span
+                      >© <span id="date"></span>
+                      <script>
+                        const dateYear = document.getElementById("date");
+                        const nowDateYear = new Date();
+                        const year = nowDateYear.getFullYear();
+                        dateYear.innerText = `${year}`;
+                      </script>
+                      <span id="footer-rechte-box-hover"
+                        >DS-AT Reichwein - Dienstleistungen für die Automobilbranche
+                      </span>
+                      - Alle Rechte vorbehalten</span
+                    >
+                    <br />
+                    <span id="small-footer-rechte-box"
+                      ><a
+                        id="datenschutz-impressum-link"
+                        href="/willkommen-auf-http-ds-at-reichwein-de-2/recht-sichere-pflicht-angaben.html"
+                        class="data-impres"
+                        >DATENSCHUTZ & IMPRESSUM</a
+                      >
+                    </span>
+                  </div>
+                </footer>
+        </div>
+    </div>
+</body>
+</html>
