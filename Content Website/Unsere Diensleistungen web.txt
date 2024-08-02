@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Als Partner für die nationale und internationale Automobil- und Zulieferindustrie stellen wir weltweite Entwicklungs- und Servicedienstleistungen bereit.
 
 Dazu gehören:
@@ -17,4 +18,25 @@ Dazu gehören:
 
 • Servicedienstleistungen in Erprobungsbereichen
 
+=======
+Als Partner für die nationale und internationale Automobil- und Zulieferindustrie stellen wir weltweite Entwicklungs- und Servicedienstleistungen bereit.
+
+Dazu gehören:
+
+• Reifendauerlauftests
+
+• Entwicklung von Testsystemen und -methoden
+
+• Systemerprobungen
+
+• Homologations-Tests nach FMVSS 110 und KMVSS 88-2
+
+• Dauerlauferprobungen für Überwachungsorganisationen
+
+• weltweite Sensorerprobung von Fahrer-Assistenz-Systemen
+   für „Autonomous Driving“
+
+• Servicedienstleistungen in Erprobungsbereichen
+
+>>>>>>> f6fe748aba06fd8e3b3d5341ef8f06be6458521f
 • Werkstattservice

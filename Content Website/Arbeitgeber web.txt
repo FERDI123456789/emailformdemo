@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Wir suchen stets (w/m/d):
  
 ・Gernfahrer, die sich zu einem Testfahrer entwickeln und perfektionieren wollen.
@@ -10,4 +11,18 @@ die an der Entwicklung von modernen, automatisierten Fahrzeugsystemen mitarbeite
  
 Wir sind Ausbilder für KFZ- und IT-Berufe der IHK Thüringen.
  
+=======
+Wir suchen stets (w/m/d):
+ 
+・Gernfahrer, die sich zu einem Testfahrer entwickeln und perfektionieren wollen.
+・Kraftfahrer,
+・KFZ-Mechatroniker,
+・Sachbearbeiter,
+・ Projektleiter,
+・ Werkstudenten/Praktikanten,
+die an der Entwicklung von modernen, automatisierten Fahrzeugsystemen mitarbeiten wollen.
+ 
+Wir sind Ausbilder für KFZ- und IT-Berufe der IHK Thüringen.
+ 
+>>>>>>> f6fe748aba06fd8e3b3d5341ef8f06be6458521f
 Zusätzliche und notwendige Fahrerqualifikationen sind fester Bestandteil unseres Weiterbildungsprogramms.
